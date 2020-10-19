@@ -28,6 +28,12 @@
    $ aws elasticbeanstalk create-configuration-template --application-name my-app --template-name v1 --solution-stack-name "64bit Amazon Linux 2015.03 v2.0.0 running Ruby 2.2 (Passenger Standalone)"
    ```
 
+If you are having trouble finding the --solution-stack-name attribute, you can use:
+
+   ```
+   $ aws elasticbeanstalk list-available-solution-stacks
+   ```
+
 1. Create environment\.
 
    ```
